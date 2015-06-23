@@ -3,6 +3,7 @@
 textbf_Abstract_textbf_Automatic_detection__.tex
 textbf_Introduction_Celeste_What_is__.tex
 textbf_Structure_of_Program_Software__.tex
+figures/toClass1/toClass1.png
 figures/setup modeler/setup modeler.png
 figures/example/example.png
 textbf_Pollen_grain_detection_including__.tex
