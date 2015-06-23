@@ -9,3 +9,4 @@ textbf_Texture_feature_extraction_Romain__.tex
 textbf_Aperture_feature_extraction_Romain__.tex
 textbf_Classification_process_Celeste_how__.tex
 textbf_Results_Celeste_everyone_What__.tex
+textbf_Conclusion_Celeste_Summary_of__.tex
