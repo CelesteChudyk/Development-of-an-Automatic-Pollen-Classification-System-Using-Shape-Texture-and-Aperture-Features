@@ -6,3 +6,4 @@ textbf_Structure_of_Program_Software__.tex
 textbf_Pollen_grain_detection_including__.tex
 textbf_Shape_feature_extraction_which__.tex
 textbf_Texture_feature_extraction_Romain__.tex
+textbf_Aperture_feature_extraction_Romain__.tex
