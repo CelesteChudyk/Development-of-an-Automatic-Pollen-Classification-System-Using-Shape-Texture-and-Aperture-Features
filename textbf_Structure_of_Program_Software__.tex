@@ -1,10 +1,7 @@
 \textbf{Structure of Program/Software overview} (Hugo) 
 
 The system is made of two principal steps which are called \begin{quote}
-MODELER
-\end{quote} and \begin{quote}
-MATCHER
-\end{quote} those steps must be executed once after an other to let the application works properly.
+MODELER and MATCHER those steps must be executed once after an other to let the application works properly.
 The \textbf{MODELER} is very easy to perform, the user have to create it's “type” folders signed by an underscore.
 [IMAGE]
 Each folder should have a name related to the type of pollen that it is containing. For instance, the folder “_Mugwort” should contain only Mugwort pollen type particles.
@@ -28,17 +25,11 @@ First, the user will have to take pictures of its images using a microscope and 
 This part of the program works using three sub-scripts.
 
 \begin{itemize}
-\item The \begin{quote}
-EXE_SEGMENTER
-\end{quote} which will cut off particles from the microscope images and save them in the toClass folder
+\item The EXE_SEGMENTER which will cut off particles from the microscope images and save them in the toClass folder
 
-\item the \begin{quote}
-EXE_CLASSIFIER
-\end{quote} which will fit those saved particles with the model and try to determine their types in a sorted.csv file.
+\item the EXE_CLASSIFIER which will fit those saved particles with the model and try to determine their types in a sorted.csv file.
 
-\item And finally the \begin{quote}
-EXE_MOSIN
-\end{quote} which goal is to transform the saved particle images in the toClass folder with their types name by using the mosin.csv generated with the model and sorted.csv file.
+\item And finally the EXE_MOSIN which goal is to transform the saved particle images in the toClass folder with their types name by using the mosin.csv generated with the model and sorted.csv file.
 \end{itemize}
 
 Here is the execution order using the GLOBAL – EXECUTER.
@@ -51,6 +42,7 @@ Here is the final MATCHER folder look after a GLOBAL – EXECUTER execution.
 Here is the toClass folder after the EXE_MOSIN finished renaming the particle files.
 [IMAGE]
 ### with illustration
+    
     
     
     
