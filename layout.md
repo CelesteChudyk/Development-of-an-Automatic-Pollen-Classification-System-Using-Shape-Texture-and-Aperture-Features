@@ -6,7 +6,6 @@ textbf_Structure_of_Program_Software__.tex
 figures/setup modeler/setup modeler.png
 figures/example/example.png
 textbf_Pollen_grain_detection_including__.tex
-figures/toClass/toClass.png
 textbf_Shape_feature_extraction_which__.tex
 textbf_Texture_feature_extraction_Romain__.tex
 textbf_Aperture_feature_extraction_Romain__.tex
