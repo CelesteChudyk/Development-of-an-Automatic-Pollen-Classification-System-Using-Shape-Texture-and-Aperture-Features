@@ -4,10 +4,13 @@ which texture features are extracted/how/what data is used exactly
 
 ### remember to add one or two illustrations 
 
-\textit{Gabor Wavelets}
+    \textit{Gabor Wavelets}
 
 The Gabor Wavelets function consists in apply some different filters, with various directions, and produce some images. After this task, we compute some values for the final array. So the process used here takes 5 filters, with a different size for each ones, like a mask for image processing. For each filters used, we apply 8 others masks who symbolize the 8 directions of the image. So at the end, we will have 40 images, where one image correspond to one size of the filter, and one direction different for all the images. For each image, we have to extract some characteristics like done with FFT. We choose the local energy, which is the sum of the square of the intensity pixel (in gray), done for all the pixels from a picture, and the mean amplitude, which is the sum for the amplitude on all the images of the Wavelets, divide by the total number of images. We save this values, so we have 80 values, which are the two attributes for the 40 images. Then, we store the local energy for each 8 directions. Finally, we add the direction where the local energy is at the maximum.
 
+    \textit{Fourier Transform}
+
+As an image in input, we make the Fast Fourier Transform of the image given. The next step is to compute the frequency of the transformation. We have a graph of the frequencies now. We take all the 10 best peaks of the graph. We only keep the indexes, and not the values. After this, we compute the difference 2 by 2 (first and second, second and third ...) We have now 9 values, because of the difference of the 10 peaks. We store them, with the mean of the difference, and the variance of the difference.
     
     
     
