@@ -9,7 +9,6 @@ textbf_Pollen_grain_detection_including__.tex
 textbf_Shape_feature_extraction_which__.tex
 textbf_Texture_feature_extraction_Romain__.tex
 figures/direction1/direction1.PNG
-figures/fractal/fractal.png
 textbf_Aperture_feature_extraction_Romain__.tex
 figures/birchMod/birchMod.png
 figures/apertures/apertures.PNG
