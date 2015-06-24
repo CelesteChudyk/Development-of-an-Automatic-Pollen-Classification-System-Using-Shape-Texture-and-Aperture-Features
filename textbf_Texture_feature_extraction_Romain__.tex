@@ -6,7 +6,7 @@ which texture features are extracted/how/what data is used exactly
 
     \textit{Introduction}
     
-For each image, a general tranformation will give a line, with values successively compute by the transformation. The aim is to group them all together. So for an image, we add into the same line all the transformations made before. In this order, we will have the Gabor Wavelets (GW), the Fast Fourier Transform (FFT), the Local Binary Pattern (LBP), the Gray-Level Co-occurrence Matrix (GLCM), the Histogram of Oriented Gradients (HOG), Haralick, and the Aperture Detection.
+For each image, a general transformation will give a line, with values successively compute by the transformation. The aim is to group them all together. So for an image, we add into the same line all the transformations made before. In this order, we will have the Gabor Wavelets (GW), the Fast Fourier Transform (FFT), the Local Binary Pattern (LBP), the Gray-Level Co-occurrence Matrix (GLCM), the Histogram of Oriented Gradients (HOG), Haralick, and the Aperture Detection.
 
     \textit{Gabor Wavelets}
 
@@ -14,7 +14,8 @@ The Gabor Wavelets function consists in apply some different filters, with vario
 
     \textit{Fourier Transform}
 
-As an image in input, we make the Fast Fourier Transform of the image given. The next step is to compute the frequency of the transformation. We have a graph of the frequencies now. We take all the 10 best peaks of the graph. We only keep the indexes, and not the values. After this, we compute the difference 2 by 2 (first and second, second and third ...) We have now 9 values, because of the difference of the 10 peaks. We store them, with the mean of the difference, and the variance of the difference.
+As an image in input, we make the Fast Fourier Transform of the image given. It will five an image, which represent the to the frequency domain, and not anymore of spatial domain. We apply a logamithmic transformation to see the frequency image, because without this step, the image is black. The low frequencies are at the middle of the image, and the high frequency all around. We create a graph of the frequencies now. We take all the 10 best peaks of the graph. We only keep the indexes, and not the values. After this, we compute the difference 2 by 2 (first and second, second and third ...) We have now 9 values, because of the difference of the 10 peaks. We store them, with the mean of the difference, and the variance of the difference.
+    
     
     
     
