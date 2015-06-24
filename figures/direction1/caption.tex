@@ -56,6 +56,16 @@ This algorithm which allows to create fractal image in order to detect the
 roughness of an image. The fractal is the replication of a geometric form at every scale.
 The roughness is a texture of a surface or edge that is not smooth but is irregular and uneven
     
+\textit{Local Binary Pattern (LBP )}
 
+The local binary patterns are the characteristics used to recognise the texture and the shape or to detect
+objects into digital pictures. It compares the level of luminance of a pixel.
+It's an algorithm which allows the calculation of the skewness and kurtosis.
+The skewness is the computation of the lack of symmetry of a picture.
+The kurtosis is the computation of the distribution of the gray level on a picture. If this value is positive,
+the distribution of the gray level is uniform. If the kurtosis is negative, most of the color are a
+medium intensity.
 
+This algorithm select a group of 3x3 pixels, it compare the central pixel of this square, if the intensity of this pixel is higher or equal of his neighbourhood, this later get a value of 0, otherwise it obtain a value of 1.
+Finally we obtain an threshhold picture, a picture which contain 0 or 1 pixels values.
     
