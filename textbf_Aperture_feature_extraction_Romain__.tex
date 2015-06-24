@@ -3,4 +3,14 @@
  How are apertures detected
  
 ### with illustration
+
+	When we have an image of pollen, we want to detect automatically the apertures of the pollen. It will help the machine learning program to associate a type for the pollen given.
+	Firstly, a window will move on the pollen, which go all over the image, and saved each state as an image. The saved images are only store temporary, to keep in mind those. After this task done, we make the transformations on each images : The Fast Fourier Transform (FFT), Gabor Wavelets (GW), Local Binary Pattern (LBP), Gray-Level Co-occurrence Matrix (GLCM), Histogram of Oriented Gradients (HOG), and Haralick. A line is created for each file with all the values together. At the end, we create a CSV file, with the lines found before. A model might be created with this program. In fact, we just add as the first column the class corresponding to the pollen given. It need to detect the apertures on few images manually, using the previous program.
+	The next step is to make a machine-learning program, that take in model the CSV file with the labeled lines. Next, we take a CSV file, non-labeled this time. The machine-learning program will try to define a class to the data given. To improve the number of characteristics that we want, for each aperture, it will give the percentage of chance for the aperture to belong to the class. 10 apertures maximum are computed here, but normally, the maximum that we can found is 5 for Alder pollen. At the end, we will return an array with 40 values, where :
+- The first value correspond to the probability that the first aperture belong to Alder pollen,
+- The second value correspond to the probability that the first aperture belong to Birch pollen,
+- The third value correspond to the probability that the first aperture belong to Hazel pollen,
+- The fourth value correspond to the probability that the first aperture belong to Mugwort pollen,
+- The fifth value correspond to the probability that the second aperture belong to Alder pollen...
+    
     
