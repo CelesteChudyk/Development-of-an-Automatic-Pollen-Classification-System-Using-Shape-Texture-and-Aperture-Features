@@ -9,6 +9,7 @@ textbf_Pollen_grain_detection_including__.tex
 textbf_Shape_feature_extraction_which__.tex
 textbf_Texture_feature_extraction_Romain__.tex
 figures/direction1/direction1.PNG
+figures/thresh/thresh.png
 figures/lbp compara/lbp compara.JPG
 textbf_Aperture_feature_extraction_Romain__.tex
 figures/birchMod/birchMod.png
