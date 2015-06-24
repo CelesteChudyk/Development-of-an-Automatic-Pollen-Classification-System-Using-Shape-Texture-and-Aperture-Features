@@ -17,12 +17,14 @@ First, we start to import the microscope image to create the pre-filter of it. T
 
 	Now that the “detector image” has been created, we can use it to get every particle (from the source image) as a new more little picture to save.
 	
-	To do so, we use an algorithm called “blob detection feature”. This program helps in capturing shapes from a source image. This algorithm is based on four attributes – Area, Circularity, Convexity and Inertia Ration - with their “min” and “max” values that let it be more accurate and quicker.
+	To do so, we use an algorithm called “blob detection feature”. This program helps in capturing basic shapes from a source image. This algorithm is based on four attributes – Area, Circularity, Convexity and Inertia Ration – with their “minimum” and “maximum” values to let it be more accurate and quicker. Here we only really use the area attribute (on 300 for its minimum) to do not let the blob detector takes wrong little particles like dirt ones or to small ones which could not be processed.
 	
-	Here we only really use the area attribute (on 300 for its minimum) to do not let the blob detector takes wrong little particles like dirt ones or to small ones which could be not be processed.
+	Once done, the blob detector give back an array with blob objects, those objects contains informations like perimeter, position in the source image and area. We now know where is every particle in the image. By using those informations we can cut off squares from the source image into new pictures representing, for each one, a single particle.
 
 \textbf{SAVING AND CLEANING}
 
 ungluer (redo the job (OTSU will be modified))
 
 blur cleaner → amount of clearness 20.
+    
+    
