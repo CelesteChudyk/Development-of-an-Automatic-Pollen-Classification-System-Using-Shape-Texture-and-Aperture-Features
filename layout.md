@@ -8,7 +8,6 @@ figures/example/example.png
 textbf_Pollen_grain_detection_including__.tex
 textbf_Shape_feature_extraction_which__.tex
 textbf_Texture_feature_extraction_Romain__.tex
-Fourier_Transform_As_an_image__.tex
 figures/direction1/direction1.PNG
 textbf_Aperture_feature_extraction_Romain__.tex
 textbf_Classification_process_Celeste_how__.tex
