@@ -10,7 +10,7 @@ figures/segment process/segment process.png
 figures/5/5.png
 figures/glued exmaple/glued exmaple.png
 figures/clear example/clear example.png
-textbf_Shape_feature_extraction_which__.tex
+textbf_Shape_feature_extraction_Hugo__.tex
 textbf_Texture_feature_extraction_Romain__.tex
 figures/direction1/direction1.PNG
 figures/thresh/thresh.png
