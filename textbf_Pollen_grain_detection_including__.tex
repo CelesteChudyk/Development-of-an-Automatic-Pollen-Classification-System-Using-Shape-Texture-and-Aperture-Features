@@ -5,13 +5,14 @@ To accomplish the segmentation part for our system, we have to complete three ta
 
 \textbf{THRESHOLD}
 
-\t First, we start to import the microscope image to create the pre-filter of it. This pre-filter can be applied on Gray or Coloured image. Basically it consists in a negative, median blur and Gaussian blur filter. The negative part is here to make the background darker than the particles. The Median blur and Gaussian blur are here to clean-up the image so that the source image is transform in a much cleaner one with it's “big particles” more visible. This step helps to remove grain and dirt from the source image.
+First, we start to import the microscope image to create the pre-filter of it. This pre-filter can be applied on Gray or Coloured image. Basically it consists in a negative, median blur and Gaussian blur filter. The negative part is here to make the background darker than the particles. The Median blur and Gaussian blur are here to clean-up the image so that the source image is transform in a much cleaner one with it's “big particles” more visible. This step helps to remove grain and dirt from the source image.
 	
 	Once the source image has been transform within the program (the source image on the hard-drive is not modified), we create a threshold from that using the OTSU algorithm to automatically detect the histogram peak. The returned image is an optimised binary image with its particles in white colour and the background in black colour.
 	
 	From this point, the binary image in not enough clear to algorithmically (the pollen particle are filled with black holes) so we have to apply the second filters which consist in two erode and two dilate filters with different applying iterations. The final threshold image is finally very clean. It has its particle in white all filled in white and the background completely filled in black colour. NB: some very low contrasted microscope images will sometimes lose some almost indistinguishable particles (even with human eyes) due to the lake of contrast with the background.
 	
 	The final threshold image is then turned into a negative one or not depending of its look after the final filter step (the particles have to be black and the background white).
+    
     
     
     
