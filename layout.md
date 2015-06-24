@@ -14,6 +14,7 @@ textbf_Shape_feature_extraction_Hugo__.tex
 textbf_Texture_feature_extraction_Romain__.tex
 figures/direction1/direction1.PNG
 figures/thresh/thresh.png
+figures/comparer lbp/comparer lbp.JPG
 textbf_Aperture_feature_extraction_Romain__.tex
 figures/birchMod/birchMod.png
 figures/apertures/apertures.PNG
