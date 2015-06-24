@@ -7,6 +7,7 @@ figures/toClass1/toClass1.png
 figures/example/example.png
 textbf_Pollen_grain_detection_including__.tex
 figures/segment process/segment process.png
+figures/5/5.png
 textbf_Shape_feature_extraction_which__.tex
 textbf_Texture_feature_extraction_Romain__.tex
 figures/direction1/direction1.PNG
