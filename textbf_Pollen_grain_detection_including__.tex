@@ -12,8 +12,17 @@ First, we start to import the microscope image to create the pre-filter of it. T
 	From this point, the binary image in not enough clear to algorithmically (the pollen particle are filled with black holes) so we have to apply the second filters which consist in two erode and two dilate filters with different applying iterations. The final threshold image is finally very clean. It has its particle in white all filled in white and the background completely filled in black colour. NB: some very low contrasted microscope images will sometimes lose some almost indistinguishable particles (even with human eyes) due to the lake of contrast with the background.
 	
 	The final threshold image is then turned into a negative one or not depending of its look after the final filter step (the particles have to be black and the background white).
-    
-    
-    
-    
-    
+
+\textbf{BLOB DETECTOR}
+
+	Now that the “detector image” has been created, we can use it to get every particle (from the source image) as a new more little picture to save.
+	
+	To do so, we use an algorithm called “blob detection feature”. This program helps in capturing shapes from a source image. This algorithm is based on four attributes – Area, Circularity, Convexity and Inertia Ration - with their “min” and “max” values that let it be more accurate and quicker.
+	
+	Here we only really use the area attribute (on 300 for its minimum) to do not let the blob detector takes wrong little particles like dirt ones or to small ones which could be not be processed.
+
+\textbf{SAVING AND CLEANING}
+
+ungluer (redo the job (OTSU will be modified))
+
+blur cleaner → amount of clearness 20.
