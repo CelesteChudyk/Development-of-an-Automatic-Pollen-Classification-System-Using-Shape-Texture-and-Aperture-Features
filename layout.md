@@ -13,6 +13,7 @@ figures/clear example/clear example.png
 textbf_Shape_feature_extraction_Hugo__.tex
 textbf_Texture_feature_extraction_Romain__.tex
 figures/direction1/direction1.PNG
+figures/is/is.png
 figures/lbp rect1/lbp rect1.JPG
 figures/lbp rect/lbp rect.JPG
 figures/thresh/thresh.png
