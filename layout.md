@@ -16,6 +16,7 @@ figures/direction1/direction1.PNG
 figures/is/is.png
 figures/comparer lbp1/comparer lbp1.JPG
 figures/comparer lbp/comparer lbp.JPG
+figures/comparer_lbp/comparer_lbp.jpg
 textbf_Aperture_feature_extraction_Romain__.tex
 figures/birchMod/birchMod.png
 figures/apertures/apertures.PNG
