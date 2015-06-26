@@ -19,6 +19,6 @@ textbf_Aperture_feature_extraction_Romain__.tex
 figures/birchMod/birchMod.png
 figures/apertures/apertures.PNG
 textbf_Classification_process_Celeste_how__.tex
-textbf_Multiprocessing_The_multiprocessing_is__.tex
+textbf_Multithreading_The_multithreading_is__.tex
 textbf_Results_Celeste_everyone_What__.tex
 textbf_Conclusion_Celeste_Summary_of__.tex
