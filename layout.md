@@ -5,6 +5,7 @@ textbf_Introduction_Celeste_Currently_pollen__.tex
 textbf_Structure_of_Program_Software__.tex
 figures/toClass1/toClass1.png
 figures/example/example.png
+figures/big panel/big panel.png
 textbf_Pollen_grain_detection_including__.tex
 figures/segment process/segment process.png
 figures/5/5.png
