@@ -14,6 +14,7 @@ textbf_Shape_feature_extraction_Celeste__.tex
 textbf_Texture_feature_extraction_Romain__.tex
 figures/direction1/direction1.PNG
 figures/is/is.png
+figures/comparer_lbp1/comparer_lbp1.jpg
 figures/comparer lbp1/comparer lbp1.JPG
 figures/comparer lbp/comparer lbp.JPG
 figures/comparer_lbp/comparer_lbp.jpg
