@@ -1,3 +1,21 @@
-\textbf{Shape feature extraction}  (Celeste)
+\textbf{Shape feature extraction}
 
-which shape features are calculated and how is this done
+We have used 18 shape features previously identified to be useful in previous iterations of our research (Lozano). These 18 were selected based on the research of developing an identification process for the Urticaceae family of pollen (Rodriguez-Damian), as well as research into developing universal shape descriptors (Costa).
+
+Shape features used:
+1. Perimeter: length of contour
+2. Area: number of pixels contained inside the contour
+3. Roundness: 4*pi*A/squaredperimeter
+4. Compactness: 1/roundness
+5. RC: (perimeter-math.sqrt(perimeter*perimeter-4*math.pi*area))/(perimeter+math.sqrt(perimeter*perimeter-4*math.pi*area))
+6. Mean Distance: Average of the distance between the center of gravity and the contour
+7. Minimal Distance: Smallest distance between the center of gravity and the contour
+8. Maximal Distance: Longest distance between the center of gravity and the contour
+9. Ratio1: Maximal Distance divided by the Minimal Distance
+10: Ratio2: Maximum Distance divided by the Mean Distance
+11: Ratio3: Minimum Distance divided by the Mean Distance
+12. Diameter: Longest distance between any two points along the contour
+13. Radius dispersion: Standard deviation of the distances between the center of gravity and the contour
+14. Holes: Sum of differences between the Maximal Distance and the distance between center of gravity and the contour
+15: EN2: Second Euclidean Norm
+16. RMS Mean:
