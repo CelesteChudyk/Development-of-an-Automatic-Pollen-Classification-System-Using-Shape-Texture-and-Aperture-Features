@@ -12,7 +12,7 @@ figures/5/5.png
 figures/glued exmaple/glued exmaple.png
 figures/clear example/clear example.png
 textbf_Shape_feature_extraction_We__.tex
-textbf_Texture_feature_extraction_Romain__.tex
+textbf_Texture_feature_extraction_textit__.tex
 figures/direction1/direction1.PNG
 figures/is/is.png
 figures/comparer_lbp1/comparer_lbp1.jpg
