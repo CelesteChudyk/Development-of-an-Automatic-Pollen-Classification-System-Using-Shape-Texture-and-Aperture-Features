@@ -1,34 +1,21 @@
-\textbf{Pollen grain detection} (including blur detection) (Hugo)
+\textbf{Pollen grain detection} (including blur detection)
 
-To accomplish the segmentation part for our system, we have to complete three tasks, one after another to give the best result as possible.
-	To sum-up, we start from the basic microscope images and then filter them into a binary threshold image so that the “Blob Detection” algorithm can pick every particle in the image and save them. Once copied in the output folder, an additional step acts to clean unwanted particle (such as dirt) saved by the blob detector and unglue some images which contains more than one particle.
 
 \textbf{THRESHOLD}
 
-First, we start to import the microscope image to create the pre-filter of it. This pre-filter can be applied on Gray or Coloured image. Basically it consists in a negative, median blur and Gaussian blur filter. The negative part is here to make the background darker than the particles. The Median blur and Gaussian blur are here to clean-up the image so that the source image is transform in a much cleaner one with it's “big particles” more visible. This step helps to remove grain and dirt from the source image.
-	
-	Once the source image has been transform within the program (the source image on the hard-drive is not modified), we create a threshold from that using the OTSU algorithm to automatically detect the histogram peak. The returned image is an optimised binary image with its particles in white colour and the background in black colour.
-	
-	From this point, the binary image in not enough clear to algorithmically (the pollen particle are filled with black holes) so we have to apply the second filters which consist in two erode and two dilate filters with different applying iterations. The final threshold image is finally very clean. It has its particle in white all filled in white and the background completely filled in black colour. NB: some very low contrasted microscope images will sometimes lose some almost indistinguishable particles (even with human eyes) due to the lake of contrast with the background.
-	
-	The final threshold image is then turned into a negative one or not depending of its look after the final filter step (the particles have to be black and the background white).
+The particle detection process works through the following steps: Fist, a median blur and Gauassian blur are applied to a negative of the image in order to remove smaller particles that are background noise (often dirt or imperfections on the background). 
+Next a threshold is applied to the image, using the OTSU algorithm to automatically detect the histogram peak. The returned image is an optimized binary image. A second set of filters is then applied using morphological operators (iterations of erosions and dilatation) to fill in the particle area. Finally, the image is converted to have a white background in preparation for further processing steps.
+
 
 \textbf{BLOB DETECTOR}
 
-	Now that the “detector image” has been created, we can use it to get every particle (from the source image) as a new more little picture to save.
-	
-	To do so, we use an algorithm called “blob detection feature”. This program helps in capturing basic shapes from a source image. This algorithm is based on four attributes – Area, Circularity, Convexity and Inertia Ration – with their “minimum” and “maximum” values to let it be more accurate and quicker. Here we only really use the area attribute (on 300 for its minimum) to do not let the blob detector takes wrong little particles like dirt ones or to small ones which could not be processed.
-	
-	Once done, the blob detector gives back an array with blob objects, those objects contains informations like perimeter, position in the source image and area. We now know where is every particle in the image. By using those informations we can cut off squares from the source image into new pictures representing, for each one, a single particle.
+Next, a blob detection algorithm is applied in order to extract a small image surrounding each particle. This algorithm is based on four attributes – Area, Circularity, Convexity and Inertia Ration, with parameters for “minimum” and “maximum” values for each. By setting the parameters for the expected characteristics of pollen grains, the smaller images are then found and extracted.
 
 \textbf{SAVING AND CLEANING}
+One last filter is used on the resulting images of particles. Because the pollen grains settle into the slide adhesive at different depths, some particles will be out of focus. These blurry images will provide insufficient data especially concerning texture features, therefore we remove them from our analysis. A blur detection algorithm was developed and applied to each image: a Laplacian filter set to a manually determined threshold value determines which images are too blurry and removed from further processing steps. 
 
-Now that we have every particle image stored somewhere, we save them in a common folder so that anyone can use them. The problem now is that this folder is filled with pollen particles but also three other types of images – dirt particle images, blurred images and glued particles images. The goal here is to clean up this result folder to later be able to use its particle without having to manually remove those wrong images. For this, we use two processes called the “un\_gluer” and the “blur\_cleaner”.
-
-	The un\_gluer process is pretty simple actually, it works pretty much like the blob detector system described earlier. The main difference between the two algorithm is that the OTSU threshold image will be calculated differently as the source image and the glued particles image are different. So, with a new threshold, the blob detector for the glued particles image will detected more accurately its particles and give new little pictures of those particles. Once done, like for the first blob detector process, little pictures are cut off from the base glued particle image and saved as new particles in the result folder. When every new little picture is saved, the source  glued particle image is removed.
-	
-	Now that every image had been unglued, the blur\_cleaner process can take the hand. It is, here again, a pretty simple algorithm but very useful to clean-up the result folder from unusable images. Here, the goal is to analyse the clearness of every image and, with a threshold value, remove those which are not enough clear for us. To do this, the algorithm simple open the current analysing picture, apply a Laplacian filter on it so that every clean line is displayed in white and the others in black, then it compute the amount of white in the image and this is hat gives the clearness of the image. By checking every test image we made, we decided that the clearness threshold would 20 so that every image which clearness is detected under 20 is removed from the result folder.
     
     
     
     
+  
