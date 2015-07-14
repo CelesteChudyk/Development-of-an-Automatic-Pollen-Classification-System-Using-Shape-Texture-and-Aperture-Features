@@ -25,4 +25,4 @@ figures/apertures/apertures.PNG
 textbf_Classification_process_Once_the__.tex
 textbf_Multithreading_The_multithreading_is__.tex
 textbf_Results_Using_a_random__.tex
-textbf_Conclusion_Celeste_Summary_of__.tex
+textbf_Conclusion_Through_this_research__.tex
