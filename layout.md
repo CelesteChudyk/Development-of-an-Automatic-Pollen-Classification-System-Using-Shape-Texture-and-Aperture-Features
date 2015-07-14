@@ -1,5 +1,4 @@
 5.tex
-section0--goofing-around.tex
 begin_abstract_Automatic_detection_and__.tex
 textbf_Introduction_Currently_pollen_count__.tex
 textbf_Structure_of_Program_Software__.tex
