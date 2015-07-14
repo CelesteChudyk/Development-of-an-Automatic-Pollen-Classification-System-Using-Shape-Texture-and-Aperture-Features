@@ -22,7 +22,7 @@ figures/comparer_lbp/comparer_lbp.jpg
 textbf_Aperture_Detection_The_number__.tex
 figures/birchMod/birchMod.png
 figures/apertures/apertures.PNG
-textbf_Classification_process_Celeste_how__.tex
+textbf_Classification_process_Once_the__.tex
 textbf_Multithreading_The_multithreading_is__.tex
 textbf_Results_Celeste_everyone_What__.tex
 textbf_Conclusion_Celeste_Summary_of__.tex
