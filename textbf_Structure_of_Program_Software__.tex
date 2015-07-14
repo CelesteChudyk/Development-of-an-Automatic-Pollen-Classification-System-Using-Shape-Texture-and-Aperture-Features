@@ -1,8 +1,22 @@
 \textbf{Structure of Program/Software overview} 
 
-The steps for data processing are as follows:
-- 
+The steps for data classification are as follows:
+1. Image Acquisition
+Five different species have been stained and prepared on glass slides for use with a common digital light-field microscope.  In order to try to mitigate  overfitting, more samples were processed in order to have all species' images come from three distinct sample sets (using a total of 15 samples overall). 
 
+2. Particle Segmentation
+Each digital image is processing in order to locate and segment out a confining square surrounding a pollen particle.
+
+3. Blur Filter
+Any blurry images, as well as objects fitting outside of the expected boundary sizes for pollen particles, are discarded.
+
+4. Contour Detection
+The contour surrounding each pollen particle is identified.
+
+5. Feature Extraction
+The contour of the particle is used to calculate shape, texture and aperture features.
+
+6. These features are used for classification.
 
     
     
@@ -19,4 +33,5 @@ The steps for data processing are as follows:
     
     
     
+  
   
