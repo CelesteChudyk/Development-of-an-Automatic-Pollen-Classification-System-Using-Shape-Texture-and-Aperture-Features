@@ -1,6 +1,6 @@
 5.tex
 begin_abstract_Automatic_detection_and__.tex
-textbf_Introduction_Currently_pollen_count__.tex
+section_Introduction_Currently_pollen_count__.tex
 textbf_Structure_of_Program_Software__.tex
 figures/big panel2/big panel2.png
 figures/toClass1/toClass1.png
