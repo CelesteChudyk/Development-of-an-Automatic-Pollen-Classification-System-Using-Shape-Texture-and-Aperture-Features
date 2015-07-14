@@ -1,6 +1,7 @@
 begin_abstract_Automatic_detection_and__.tex
 section_Introduction_Currently_pollen_count__.tex
 section_Structure_of_Program_Software__.tex
+figures/Process1/Process1.png
 figures/Process/Process.png
 figures/big panel2/big panel2.png
 figures/toClass1/toClass1.png
