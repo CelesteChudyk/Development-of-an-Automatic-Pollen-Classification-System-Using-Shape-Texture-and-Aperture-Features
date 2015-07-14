@@ -8,7 +8,7 @@ figures/big panel2/big panel2.png
 figures/toClass1/toClass1.png
 figures/example/example.png
 figures/big panel1/big panel1.png
-textbf_Particle_Segmentation_textbf_Image__.tex
+textbf_Particle_Segmentation_Each_digital__.tex
 figures/segment process/segment process.png
 figures/5/5.png
 figures/glued exmaple/glued exmaple.png
