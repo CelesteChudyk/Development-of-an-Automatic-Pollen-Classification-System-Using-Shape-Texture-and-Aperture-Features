@@ -5,21 +5,21 @@ We have used 18 shape features previously identified to be useful in previous it
 Shape features used:
 
 \begin{description}
-\item[Perimeter] length of contour
-\item[Area] number of pixels contained inside the contour
-\item[Roundness] 4*pi*A/squaredperimeter
-\item[Compactness] 1/roundness
-\item[RC] (perimeter-math.sqrt(perimeter*perimeter-4*math.pi*area))/(perimeter+math.sqrt(perimeter*perimeter-4*math.pi*area))
-\item[Mean Distance] Average of the distance between the center of gravity and the contour
-\item[Minimal Distance] Smallest distance between the center of gravity and the contour
-\item[Maximal Distance] Longest distance between the center of gravity and the contour
-\item[Ratio1] Maximal Distance divided by the Minimal Distance
-\item[Ratio2] Maximum Distance divided by the Mean Distance
-\item[Ratio3] Minimum Distance divided by the Mean Distance
-\item[Diameter] Longest distance between any two points along the contour
-\item[Radius Dispersion] Standard deviation of the distances between the center of gravity and the contour
-\item[Holes] Sum of differences between the Maximal Distance and the distance between center of gravity and the contour
-\item[EN2] Second Euclidean Norm
+\item[Perimeter (P)] Length of contour given by OpenCV's \verb|arcLength()| function
+\item[Area (A)] Number of pixels contained inside the contour
+\item[Roundness (R)] $4\pi A \over P^2$
+\item[Compactness] $1 \over R$
+\item[Thinness/Circularity Ratio (RC)] $P-\sqrt{P^2-4\pi A} \over P+\sqrt{P^2-4\pi A}$
+\item[Mean Distance ($\bar{S}$)] Average of the distance between the center of gravity and the contour
+\item[Minimal Distance ($S_{min}$)] Smallest distance between the center of gravity and the contour
+\item[Maximal Distance ($S_{max}$)] Longest distance between the center of gravity and the contour
+\item[Ratio1 ($R_1$)] Maximal Distance divided by the Minimal Distance
+\item[Ratio2 ($R_2$)] Maximum Distance divided by the Mean Distance
+\item[Ratio3 ($R_3$)] Minimum Distance divided by the Mean Distance
+\item[Diameter ($D$)] Longest distance between any two points along the contour
+\item[Radius Dispersion ($RD$)] Standard deviation of the distances between the center of gravity and the contour
+\item[Holes ($H$)] Sum of differences between the Maximal Distance and the distance between center of gravity and the contour
+\item[Euclidean Norm (EN2)] Second Euclidean Norm
 \item[RMS Mean] RMS mean size
 \item[Mean Distance to Boundary] Average distance between every point within the area and the contour
 \item[Complexity F] Shape complexity measure based on the ratio of the area and the mean distance to boundary
@@ -27,4 +27,5 @@ Shape features used:
 
 
 
+  
   
