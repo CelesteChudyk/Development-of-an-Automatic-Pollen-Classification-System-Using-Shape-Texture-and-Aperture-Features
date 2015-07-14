@@ -1,4 +1,3 @@
-2.tex
 5.tex
 textbf_Abstract_textbf_Automatic_detection__.tex
 textbf_Introduction_Currently_pollen_count__.tex
