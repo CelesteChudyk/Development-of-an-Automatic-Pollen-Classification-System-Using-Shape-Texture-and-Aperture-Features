@@ -1,4 +1,3 @@
-5.tex
 begin_abstract_Automatic_detection_and__.tex
 section_Introduction_Currently_pollen_count__.tex
 section_Structure_of_Program_Software__.tex
