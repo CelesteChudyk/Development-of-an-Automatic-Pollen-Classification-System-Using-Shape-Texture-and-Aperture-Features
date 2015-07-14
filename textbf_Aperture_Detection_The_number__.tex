@@ -1,12 +1,10 @@
 \textbf{Aperture Detection}
+
 The number and type of apertures present on the pollen surface is a typical feature used by palynologists in order to determine the pollen species. Therefore, it seems useful to also build an automatic aperture detection function in order to identify and count apertures as an addition feature set. Preliminary work identifying apertures through a Bag of Words process (Lozano) has shown potential for this analysis.
-First, a moving window segments the pollen image into smaller areas. Each smaller image is manually labeled as an aperture or not an aperture. Texture features are extracted from these smaller images, including a Fast Fourier Transform (FFT), Gabor Wavelets (GW), Local Binary Pattern (LBP), Histogram of Oriented Gradients (HOG), and Haralick features. A supervised learning process (through the use of support vector machines) then creates a model for 
-	The next step is to make a machine-learning program, that take in model the CSV file with the labeled lines. Next, we take a CSV file, non-labeled this time. The machine-learning program will try to define a class to the data given. To improve the number of characteristics that we want, for each aperture, it will give the percentage of chance for the aperture to belong to the class. 10 apertures maximum are computed here, but normally, the maximum that we can found is 5 for Alder pollen. At the end, we will return an array with 40 values, where :
-- The first value correspond to the probability that the first aperture belong to Alder pollen,
-- The second value correspond to the probability that the first aperture belong to Birch pollen,
-- The third value correspond to the probability that the first aperture belong to Hazel pollen,
-- The fourth value correspond to the probability that the first aperture belong to Mugwort pollen,
-- The fifth value correspond to the probability that the second aperture belong to Alder pollen...
+First, a moving window segments the pollen image into smaller areas. Each smaller image is manually labeled as an aperture or not an aperture. Texture features are extracted from these smaller images, including those through a Fast Fourier Transform (FFT), Gabor Wavelets (GW), Local Binary Pattern (LBP), Histogram of Oriented Gradients (HOG), and Haralick features. A supervised learning process (through the use of support vector machines) then creates a model for each of the four species expected to include apertures on the surface.
+Once an unlabled pollen image is given to be classified, the system again uses a moving window to break up the image into subsections. These smaller sections are then loaded into the generated model, and four values are returned for each detected aperture, corresponding to the probability that the aperture is of type Aler, Birch, Hazel, and Mugwort. 
+
     
     
+  
   
