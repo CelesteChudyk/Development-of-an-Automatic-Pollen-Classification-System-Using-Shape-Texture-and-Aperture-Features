@@ -1,21 +1,22 @@
-\textbf{Pollen grain detection} (including blur detection)
+\textbf{Particle Segmentation} 
 
 
-\textbf{THRESHOLD}
+\textbf{Image filtering}
 
 The particle detection process works through the following steps: Fist, a median blur and Gauassian blur are applied to a negative of the image in order to remove smaller particles that are background noise (often dirt or imperfections on the background). 
 Next a threshold is applied to the image, using the OTSU algorithm to automatically detect the histogram peak. The returned image is an optimized binary image. A second set of filters is then applied using morphological operators (iterations of erosions and dilatation) to fill in the particle area. Finally, the image is converted to have a white background in preparation for further processing steps.
 
 
-\textbf{BLOB DETECTOR}
+\textbf{Blob detection}
 
 Next, a blob detection algorithm is applied in order to extract a small image surrounding each particle. This algorithm is based on four attributes – Area, Circularity, Convexity and Inertia Ration, with parameters for “minimum” and “maximum” values for each. By setting the parameters for the expected characteristics of pollen grains, the smaller images are then found and extracted.
 
-\textbf{SAVING AND CLEANING}
+\textbf{Filtering of results}
 One last filter is used on the resulting images of particles. Because the pollen grains settle into the slide adhesive at different depths, some particles will be out of focus. These blurry images will provide insufficient data especially concerning texture features, therefore we remove them from our analysis. A blur detection algorithm was developed and applied to each image: a Laplacian filter set to a manually determined threshold value determines which images are too blurry and removed from further processing steps. 
 
     
     
     
     
+  
   
