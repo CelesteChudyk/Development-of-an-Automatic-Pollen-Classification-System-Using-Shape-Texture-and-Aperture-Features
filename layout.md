@@ -9,7 +9,7 @@ figures/segment process/segment process.png
 A_blob_detection_algorithm_is__.tex
 figures/clear example/clear example.png
 section_Feature_Extraction_subsection_Shape__.tex
-subsection_Texture_feature_extraction_The__.tex
+subsection_Texture_feature_extraction_A__.tex
 figures/direction1/direction1.PNG
 subsubsection_Fourier_Transform_We_apply__.tex
 subsubsection_Haralick_Features_Haralick_features__.tex
