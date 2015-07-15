@@ -5,7 +5,6 @@ figures/Process1/Process1.png
 section_Image_Acquisition_and_Particle__.tex
 figures/3example/3example.png
 For_particle_segmentation_each_digital__.tex
-figures/segment process/segment process.png
 A_blob_detection_algorithm_is__.tex
 figures/clear example/clear example.png
 section_Feature_Extraction_subsection_Shape__.tex
@@ -21,6 +20,7 @@ figures/apertures/apertures.PNG
 section_Classification_Once_the_shape__.tex
 section_Results_Using_a_random__.tex
 section_Conclusion_Through_this_research__.tex
+  
   
   
   
