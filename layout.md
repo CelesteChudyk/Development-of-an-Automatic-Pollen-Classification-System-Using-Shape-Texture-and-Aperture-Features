@@ -25,7 +25,7 @@ figures/comparer_lbp/comparer_lbp.jpg
 subsubsection_Aperture_Detection_The_number__.tex
 figures/birchMod/birchMod.png
 figures/apertures/apertures.PNG
-textbf_Classification_Once_the_shape__.tex
+section_Classification_Once_the_shape__.tex
 textbf_Multithreading_The_multithreading_is__.tex
 textbf_Results_Using_a_random__.tex
 textbf_Conclusion_Through_this_research__.tex
