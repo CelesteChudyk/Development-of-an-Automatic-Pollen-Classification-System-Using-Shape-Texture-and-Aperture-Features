@@ -1,30 +1,15 @@
 
 Haralick Features
 
-Haralick, a professor of the University of New York has realized an algorithm which allow to extract 14 features of an picture :
-
-    The angular second moment (ASM) which measure the local homogeneity of the picture.
-
-    The contrast which analyze the image contrast between a pixel and its neighbor
-
-    The correlation which analyze the linear dependency of grey levels of neighboring pixels.
-
-    Compute the variance of the image
-
-    Measure the gray tone variance
-
-    Compute the inverse difference moment : relates inversely to the contrast measure
-
-    The sum average, the entropy, sum entropy and difference entropy allow to analyses the randomness
+Haralick features are determined by computations over the GLCM (Grey Level Co-Occurance Matrix): the angular second moment, contrast, correlation, sum of squares: variance, inverse difference moment, sum average, sum variance, sum entropy, entropy, difference variance, difference entropy, measure of correlation 1, and measure of correlation 2. These are 13 out of the 14 original features developed by Haralick: the 14th is typically left out computations due to uncertainty in the metric's stability. 
 
 Histogram oriented gradient (HOG)
 
-The Histogram oriented gradient is a tool to help classification, detection, and tracking. It encode local shape information from regions or from point locations within an image. This algorithm computes the zones regularly distributed in order to classify similar elements of a picture.
+The Histogram oriented gradient is a tool to help classification, detection, and tracking. It encodes local shape information from regions or from point locations within an image. This algorithm computes the zones regularly distributed in order to classify similar elements of a picture.
 
 Local Binary Pattern (LBP )
 
-The local binary patterns are the characteristics used to recognise the texture and the shape or to detect objects into digital pictures. It compares the level of luminance of a pixel. It’s an algorithm which allows the calculation of the skewness and kurtosis. The skewness is the computation of the lack of symmetry of a picture. The kurtosis is the computation of the distribution of the gray level on a picture. If this value is positive, the distribution of the gray level is uniform. If the kurtosis is negative, most of the color are a medium intensity.
-
-This algorithm select a group of 3x3 pixels, it compare the central pixel of this square, if the intensity of this pixel is higher or equal of his neighbourhood, this later get a value of 0, otherwise it obtain a value of 1.
+To obtain local binary patterns, a 3 by 3 pixel window is moved over the image, and the value of the central pixel is compared to the value of its neighbors. In the case that the neighbor is of lower value, it is assigned a zero, and in the case of a higher value, a one. This string of eight numbers ("00011101" for instance) is the determined local pattern. Frequences of particular patterns can be used as the texture description. 
+  
   
   
