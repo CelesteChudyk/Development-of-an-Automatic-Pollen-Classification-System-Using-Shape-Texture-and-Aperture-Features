@@ -3,25 +3,15 @@ section_Introduction_Currently_pollen_count__.tex
 section_Overview_The_steps_for__.tex
 figures/Process1/Process1.png
 section_Image_Acquisition_and_Particle__.tex
-figures/Process/Process.png
-figures/big panel2/big panel2.png
-figures/toClass1/toClass1.png
-figures/example/example.png
-figures/big panel1/big panel1.png
 For_particle_segmentation_each_digital__.tex
 figures/segment process/segment process.png
-figures/5/5.png
-figures/glued exmaple/glued exmaple.png
 figures/clear example/clear example.png
 section_Feature_Extraction_subsection_Shape__.tex
 subsection_Texture_feature_extraction_The__.tex
-Haralick_Features_Haralick_features_are__.tex
+Haralick_Features_Haralick_a_professor__.tex
 figures/direction1/direction1.PNG
 figures/is/is.png
 figures/comparer_lbp1/comparer_lbp1.jpg
-figures/comparer lbp1/comparer lbp1.JPG
-figures/comparer lbp/comparer lbp.JPG
-figures/comparer_lbp/comparer_lbp.jpg
 subsubsection_Aperture_Detection_The_number__.tex
 figures/birchMod/birchMod.png
 figures/apertures/apertures.PNG
@@ -29,3 +19,4 @@ section_Classification_Once_the_shape__.tex
 section_Multithreading_The_multithreading_is__.tex
 section_Results_Using_a_random__.tex
 section_Conclusion_Through_this_research__.tex
+  
