@@ -5,6 +5,7 @@ figures/Process1/Process1.png
 section_Image_Acquisition_and_Particle__.tex
 For_particle_segmentation_each_digital__.tex
 figures/segment process/segment process.png
+One_last_filter_is_then__.tex
 figures/clear example/clear example.png
 section_Feature_Extraction_subsection_Shape__.tex
 subsection_Texture_feature_extraction_The__.tex
