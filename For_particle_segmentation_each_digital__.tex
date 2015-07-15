@@ -1,6 +1,7 @@
-For particle segmentation, each digital image is processed in order to locate and segment out a confining square surrounding a pollen particle. This process works through the following steps: First, a median blur and Gauassian blur are applied to a negative of the image in order to remove smaller particles that are background noise (often dirt or imperfections on the background). 
+For particle segmentation, each digital image is processed in order to locate and segment out a confining square surrounding a pollen particle. First, a median blur and Gauassian blur are applied to a negative of the image in order to remove smaller particles that are background noise (often dirt or imperfections on the background). 
 Next, a threshold is applied to the image, using the OTSU algorithm to automatically detect the histogram peak. The returned image is an optimized binary image. A second set of filters is then applied using morphological operators (iterations of erosions and dilatation) to fill in the particle area. Finally, the image is converted to have a white background in preparation for further processing steps. This is depicted in Figure \ref{fig:segmentation}.
 
+  
   
   
   
