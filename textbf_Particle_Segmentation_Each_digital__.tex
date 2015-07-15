@@ -1,21 +1,11 @@
-\textbf{Particle Segmentation} 
-
-Each digital image is processing in order to locate and segment out a confining square surrounding a pollen particle. 
-
-\textbf{Image filtering}
+For particle segmentation, each digital image is processed in order to locate and segment out a confining square surrounding a pollen particle. This is a multi-step process, starting with locating the particles on the larger image.
 
 The particle detection process works through the following steps: Fist, a median blur and Gauassian blur are applied to a negative of the image in order to remove smaller particles that are background noise (often dirt or imperfections on the background). 
-Next a threshold is applied to the image, using the OTSU algorithm to automatically detect the histogram peak. The returned image is an optimized binary image. A second set of filters is then applied using morphological operators (iterations of erosions and dilatation) to fill in the particle area. Finally, the image is converted to have a white background in preparation for further processing steps.
+Next a threshold is applied to the image, using the OTSU algorithm to automatically detect the histogram peak. The returned image is an optimized binary image. A second set of filters is then applied using morphological operators (iterations of erosions and dilatation) to fill in the particle area. Finally, the image is converted to have a white background in preparation for further processing steps [Figure 2].
 
+A blob detection algorithm is now applied in order to extract a small image surrounding each particle. This algorithm is based on four attributes – Area, Circularity, Convexity and Inertia Ration, with parameters for “minimum” and “maximum” values for each. By setting the parameters for the expected characteristics of pollen grains, the smaller images are then found and extracted.
 
-\textbf{Blob detection}
-
-Next, a blob detection algorithm is applied in order to extract a small image surrounding each particle. This algorithm is based on four attributes – Area, Circularity, Convexity and Inertia Ration, with parameters for “minimum” and “maximum” values for each. By setting the parameters for the expected characteristics of pollen grains, the smaller images are then found and extracted.
-
-\textbf{Blur detection and filtering}
-One last filter is used on the resulting images of particles. Because the pollen grains settle into the slide adhesive at different depths, some particles will be out of focus. These blurry images will provide insufficient data especially concerning texture features, therefore we remove them from our analysis. A blur detection algorithm was developed and applied to each image: a Laplacian filter set to a manually determined threshold value determines which images are too blurry and removed from further processing steps. 
-
-Contour Detection
+One last filter is then used on the resulting images of particles [Figure 3]. Because the pollen grains settle into the slide adhesive at different depths, some particles will be out of focus. These blurry images will provide insufficient data especially concerning texture features, therefore we remove them from our analysis. A blur detection algorithm was developed and applied to each image: a Laplacian filter set to a manually determined threshold value determines which images are too blurry and removed from further processing steps. 
 
 Lastly, the contour surrounding each pollen particle is identified, using Open CV's "findContours" method. 
 
@@ -23,6 +13,7 @@ Lastly, the contour surrounding each pollen particle is identified, using Open C
     
     
     
+  
   
   
   
