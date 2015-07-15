@@ -3,6 +3,7 @@ section_Introduction_Currently_pollen_count__.tex
 section_Overview_The_steps_for__.tex
 figures/Process1/Process1.png
 section_Image_Acquisition_and_Particle__.tex
+figures/3example/3example.png
 For_particle_segmentation_each_digital__.tex
 figures/segment process/segment process.png
 A_blob_detection_algorithm_is__.tex
