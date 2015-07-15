@@ -27,5 +27,5 @@ figures/birchMod/birchMod.png
 figures/apertures/apertures.PNG
 section_Classification_Once_the_shape__.tex
 section_Multithreading_The_multithreading_is__.tex
-textbf_Results_Using_a_random__.tex
+section_Results_Using_a_random__.tex
 textbf_Conclusion_Through_this_research__.tex
