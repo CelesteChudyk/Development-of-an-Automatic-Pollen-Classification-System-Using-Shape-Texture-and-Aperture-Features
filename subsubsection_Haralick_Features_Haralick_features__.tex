@@ -5,10 +5,12 @@ Haralick features are determined by computations over the GLCM (Grey Level Co-Oc
 
 \subsubsection{Histogram oriented gradient (HOG)}
 
-The Histogram oriented gradient is a tool to help classification, detection, and tracking. It encodes local shape information from regions or from point locations within an image. This algorithm computes the zones regularly distributed in order to classify similar elements of a picture.
+The Histogram of Oriented Gradients is calculated by first determining gradient values over a 3 by 3 Sobel mask. Next, bins are created for the creation of cell histograms; here, 10 bins were used. The gradient angles are divided into these bins, and the gradient magnitudes of the pixel values are used to determine orientation. After normalization, the values are flattened into one feature vector. 
 
 \subsubsection{Local Binary Pattern (LBP)}
 
 To obtain local binary patterns, a 3 by 3 pixel window is moved over the image, and the value of the central pixel is compared to the value of its neighbors. In the case that the neighbor is of lower value, it is assigned a zero, and in the case of a higher value, a one. This string of eight numbers ("00011101" for instance) is the determined local pattern. Frequences of particular patterns can be used as the texture description. 
   
+  
+
   
