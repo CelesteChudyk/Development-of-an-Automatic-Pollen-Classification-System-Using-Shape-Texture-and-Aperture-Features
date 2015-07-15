@@ -28,4 +28,4 @@ figures/apertures/apertures.PNG
 section_Classification_Once_the_shape__.tex
 section_Multithreading_The_multithreading_is__.tex
 section_Results_Using_a_random__.tex
-textbf_Conclusion_Through_this_research__.tex
+section_Conclusion_Through_this_research__.tex
