@@ -14,7 +14,7 @@ figures/5/5.png
 figures/glued exmaple/glued exmaple.png
 figures/clear example/clear example.png
 section_Feature_Extraction_subsection_Shape__.tex
-textbf_Texture_feature_extraction_The__.tex
+subsection_Texture_feature_extraction_The__.tex
 Haralick_Features_Haralick_a_professor__.tex
 figures/direction1/direction1.PNG
 figures/is/is.png
