@@ -9,6 +9,7 @@ figures/clear example/clear example.png
 section_Feature_Extraction_subsection_Shape__.tex
 subsection_Texture_feature_extraction_The__.tex
 figures/direction1/direction1.PNG
+subsubsection_Fourier_Transform_We_apply__.tex
 subsubsection_Haralick_Features_Haralick_features__.tex
 figures/is/is.png
 figures/comparer_lbp1/comparer_lbp1.jpg
