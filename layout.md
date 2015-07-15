@@ -8,7 +8,7 @@ figures/segment process/segment process.png
 figures/clear example/clear example.png
 section_Feature_Extraction_subsection_Shape__.tex
 subsection_Texture_feature_extraction_The__.tex
-Haralick_Features_Haralick_features_are__.tex
+subsubsection_Haralick_Features_Haralick_features__.tex
 figures/direction1/direction1.PNG
 figures/is/is.png
 figures/comparer_lbp1/comparer_lbp1.jpg
