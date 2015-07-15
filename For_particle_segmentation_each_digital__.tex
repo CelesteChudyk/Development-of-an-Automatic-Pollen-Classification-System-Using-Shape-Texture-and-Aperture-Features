@@ -1,7 +1,9 @@
 For particle segmentation, each digital image is processed in order to locate and segment out a confining square surrounding a pollen particle. This is a multi-step process, starting with locating the particles on the larger image.
 
 The particle detection process works through the following steps: Fist, a median blur and Gauassian blur are applied to a negative of the image in order to remove smaller particles that are background noise (often dirt or imperfections on the background). 
-Next a threshold is applied to the image, using the OTSU algorithm to automatically detect the histogram peak. The returned image is an optimized binary image. A second set of filters is then applied using morphological operators (iterations of erosions and dilatation) to fill in the particle area. Finally, the image is converted to have a white background in preparation for further processing steps .
+Next a threshold is applied to the image, using the OTSU algorithm to automatically detect the histogram peak. The returned image is an optimized binary image. A second set of filters is then applied using morphological operators (iterations of erosions and dilatation) to fill in the particle area. Finally, the image is converted to have a white background in preparation for further processing steps. This is depicted in Figure \ref{fig:segmentation}.
 
-A blob detection algorithm is now applied in order to extract a small image surrounding each particle. This algorithm is based on four attributes – Area, Circularity, Convexity and Inertia Ration, with parameters for “minimum” and “maximum” values for each. By setting the parameters for the expected characteristics of pollen grains, the smaller images are then found and extracted[Figure 2].
+A blob detection algorithm is now applied in order to extract a small image surrounding each particle. This algorithm is based on four attributes – Area, Circularity, Convexity and Inertia Ration, with parameters for “minimum” and “maximum” values for each. By setting the parameters for the expected characteristics of pollen grains, the smaller images are then found and extracted.
 
+
+  
