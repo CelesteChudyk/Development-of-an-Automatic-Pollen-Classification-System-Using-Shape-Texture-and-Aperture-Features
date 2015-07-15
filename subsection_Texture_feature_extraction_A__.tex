@@ -5,8 +5,9 @@ The texture features extracted included: Gabor Filters (GF), the Fast Fourier Tr
 
 \subsubsection{Gabor Filters}
 
-The Gabor Filter function consists of the application of 5 different size masks and 8 orientation masks (See Figure \ref{fig:gabor}) in order to produce output images. For each of the 40 resulting images, we calculate the local energy over the entire image (the sum of the square of the gray-level pixel intensity), and the mean amplitude (the sum of the amplitudes divided by the total number of images). In addition to these 80 values, we also store the total local energy for each of the 8 directions as well as the direction where the local energy is at the maximum.
+Gabor filters have been proven useful in image segmentation and texture analysis \cite{Zheng_2004}. The Gabor Filter function consists of the application of 5 different size masks and 8 orientation masks (See Figure \ref{fig:gabor}) in order to produce output images. For each of the 40 resulting images, we calculate the local energy over the entire image (the sum of the square of the gray-level pixel intensity), and the mean amplitude (the sum of the amplitudes divided by the total number of images). In addition to these 80 values, we also store the total local energy for each of the 8 directions as well as the direction where the local energy is at the maximum.
 
+  
   
   
   
