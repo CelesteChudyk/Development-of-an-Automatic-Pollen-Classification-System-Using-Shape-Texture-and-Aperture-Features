@@ -22,7 +22,7 @@ figures/comparer_lbp1/comparer_lbp1.jpg
 figures/comparer lbp1/comparer lbp1.JPG
 figures/comparer lbp/comparer lbp.JPG
 figures/comparer_lbp/comparer_lbp.jpg
-textbf_Aperture_Detection_The_number__.tex
+subsubsection_Aperture_Detection_The_number__.tex
 figures/birchMod/birchMod.png
 figures/apertures/apertures.PNG
 textbf_Classification_Once_the_shape__.tex
