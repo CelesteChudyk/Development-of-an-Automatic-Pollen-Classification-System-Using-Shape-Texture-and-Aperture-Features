@@ -4,21 +4,27 @@ Using a random forest classifier on a total of 600 samples (120 each for each sp
 
 The dataset was further modified into different versions in order to test the results using only subsets of the features available.
 
-\begin{table} 
-    \begin{tabular}{ l c }
-        Features & Accuracy \\ \hline
-        Shape features & $64\% \pm 3\%$ \\ 
-        Shape and Gabor Wavelets & $76\% \pm 2\%$ \\ 
-        Shape and FFT & $65\% \pm 2\%$ \\ 
-        Shape and LBP & $65\% \pm 3\%$ \\ 
-        Shape and HOG & $67\% \pm 2\%$ \\ 
-        Shape and Haralick & $87\% \pm 3\%$ \\ 
-        Shape and aperture & $67\% \pm 2\%$ \\ 
-    \end{tabular} 
+\begin{table}
+    \begin{center}
+        \begin{tabular}{ l c }
+            \toprule
+            Features & Accuracy \\ 
+            \midrule
+            Shape features & $64\% \pm 3\%$ \\ 
+            Shape and Gabor Wavelets & $76\% \pm 2\%$ \\ 
+            Shape and FFT & $65\% \pm 2\%$ \\ 
+            Shape and LBP & $65\% \pm 3\%$ \\ 
+            Shape and HOG & $67\% \pm 2\%$ \\ 
+            Shape and Haralick & $87\% \pm 3\%$ \\ 
+            Shape and aperture & $67\% \pm 2\%$ \\ 
+            \bottomrule
+        \end{tabular} 
+    \end{center}
 \end{table}
 
 The above table shows the accuracies of the trained models. Using only the 18 shape features, an accuracy of $64\% \pm 3\%$ was achieved, and adding texture information either through Gabor Wavelets or Haralick features substantially improved the results.
 
+  
   
   
   
